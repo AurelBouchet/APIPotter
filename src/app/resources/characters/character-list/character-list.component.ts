@@ -9,13 +9,12 @@ import { CharacterService } from 'src/app/services/character.service';
   providers: [CharacterService],
 })
 export class CharacterListComponent implements OnInit {
-  characters: Characters[] | undefined;
+  characters: Characters[] | any;
   constructor(private characterService: CharacterService) {}
 
-  ngOnInit(): void {
+  ngOnInit() {
     this.characterService.listCharacters().subscribe((res: Characters[]) => {
       this.characters = res;
-      console.log(this.characters);
     });
   }
 }

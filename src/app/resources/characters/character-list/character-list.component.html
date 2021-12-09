@@ -1,1 +1,14 @@
 <p>character-list works!</p>
+<div class="container">
+  <div
+    class="columns"
+    *ngFor="let character of characters"
+    [routerLink]="['characters', character.id]"
+  >
+    <div class="container">
+      <img [src]="character.image" alt="" />{{ character.name }}
+    </div>
+    <div class="column is-1">House of {{ character.house }}</div>
+    <div class="column is-1">{{ character.species }}</div>
+  </div>
+</div>

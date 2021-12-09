@@ -9,20 +9,21 @@ import { Characters } from './interface';
 export class CharacterService {
   constructor(private http: HttpClient) {}
 
+  url = 'http://hp-api.herokuapp.com/api/characters';
+
   listCharacters(): Observable<Characters[]> {
-    return this.http.get<any>('https://rickandmortyapi.com/api/character').pipe(
+    return this.http.get<[]>(this.url).pipe(
       map((res: Characters[]) => {
         return res;
       })
     );
   }
+
   showCharacter(id: number): Observable<Characters> {
-    return this.http
-      .get<any>('https://rickandmortyapi.com/api/character' + id)
-      .pipe(
-        map((res: Characters) => {
-          return res;
-        })
-      );
+    return this.http.get<any>(this.url + id).pipe(
+      map((res: Characters) => {
+        return res;
+      })
+    );
   }
 }
