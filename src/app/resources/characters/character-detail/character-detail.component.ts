@@ -1,12 +1,11 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, Input } from '@angular/core';
 
 @Component({
   selector: 'app-character-detail',
   templateUrl: './character-detail.component.html',
   styleUrls: ['./character-detail.component.scss'],
 })
-export class CharacterDetailComponent implements OnInit {
-  constructor() {}
-
-  ngOnInit(): void {}
+export class CharacterDetailComponent {
+  @Input()
+  characters: [] | undefined;
 }

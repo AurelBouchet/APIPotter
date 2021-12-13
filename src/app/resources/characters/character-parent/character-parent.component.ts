@@ -4,17 +4,22 @@ import { CharacterService } from 'src/app/services/character.service';
 
 @Component({
   selector: 'app-character-list',
-  templateUrl: './character-list.component.html',
-  styleUrls: ['./character-list.component.scss'],
+  templateUrl: './character-parent.component.html',
+  styleUrls: ['./character-parent.component.scss'],
   providers: [CharacterService],
 })
 export class CharacterListComponent implements OnInit {
-  characters: Characters[] | any;
+  charactersArray: Characters[] | any;
+  results: any;
   constructor(private characterService: CharacterService) {}
 
   ngOnInit() {
-    this.characterService.listCharacters().subscribe((res: Characters[]) => {
-      this.characters = res;
-    });
+    this.characterService
+      .listCharacters()
+      .subscribe((results: Characters[]) => {
+        this.charactersArray = results.filter(
+          (element: { image: string }) => element.image != ''
+        );
+      });
   }
 }

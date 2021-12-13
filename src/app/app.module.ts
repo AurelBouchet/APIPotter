@@ -7,7 +7,7 @@ import { AppComponent } from './app.component';
 import { appRoutes } from './app.routes';
 import { HeaderComponent } from './header/header.component';
 import { CharacterDetailComponent } from './resources/characters/character-detail/character-detail.component';
-import { CharacterListComponent } from './resources/characters/character-list/character-list.component';
+import { CharacterListComponent } from './resources/characters/character-parent/character-parent.component';
 
 @NgModule({
   declarations: [

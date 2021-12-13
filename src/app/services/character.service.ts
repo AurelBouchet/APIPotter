@@ -18,12 +18,4 @@ export class CharacterService {
       })
     );
   }
-
-  showCharacter(id: number): Observable<Characters> {
-    return this.http.get<any>(this.url + id).pipe(
-      map((res: Characters) => {
-        return res;
-      })
-    );
-  }
 }
