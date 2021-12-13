@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnDestroy, OnInit } from '@angular/core';
 import { Characters } from 'src/app/services/interface';
 import { CharacterService } from 'src/app/services/character.service';
 
@@ -8,7 +8,7 @@ import { CharacterService } from 'src/app/services/character.service';
   styleUrls: ['./character-parent.component.scss'],
   providers: [CharacterService],
 })
-export class CharacterListComponent implements OnInit {
+export class CharacterListComponent implements OnDestroy, OnInit {
   charactersArray: Characters[] | any;
   results: any;
   constructor(private characterService: CharacterService) {}
@@ -21,5 +21,8 @@ export class CharacterListComponent implements OnInit {
           (element: { image: string }) => element.image != ''
         );
       });
+  }
+  ngOnDestroy() {
+    this.characterService.listCharacters();
   }
 }
