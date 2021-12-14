@@ -1,0 +1,35 @@
+@import url("https://fonts.googleapis.com/css2?family=Barlow:wght@500&display=swap");
+
+//variables//
+$card-color: #5e807f;
+$font-color: #2b2d42;
+//variables//
+
+section {
+  font-family: "Barlow";
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+article {
+  margin: 20px;
+  border: solid 2px $card-color;
+  border-radius: 10px;
+  background-color: $card-color;
+  color: $font-color;
+  font-weight: bold;
+  filter: drop-shadow(0 0 0.3em $card-color);
+  cursor: pointer;
+}
+
+p {
+  display: flex;
+  justify-content: space-around;
+}
+
+img {
+  width: 190px;
+  height: 250px;
+}

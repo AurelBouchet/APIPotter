@@ -6,15 +6,17 @@ import { RouterModule } from '@angular/router';
 import { AppComponent } from './app.component';
 import { appRoutes } from './app.routes';
 import { HeaderComponent } from './header/header.component';
+import { CharacterListComponent } from './resources/characters/character-list/character-list.component';
+import { CharacterParentComponent } from './resources/characters/character-parent/character-parent.component';
 import { CharacterDetailComponent } from './resources/characters/character-detail/character-detail.component';
-import { CharacterListComponent } from './resources/characters/character-parent/character-parent.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     HeaderComponent,
-    CharacterDetailComponent,
     CharacterListComponent,
+    CharacterParentComponent,
+    CharacterDetailComponent,
   ],
   imports: [BrowserModule, RouterModule.forRoot(appRoutes), HttpClientModule],
   providers: [],

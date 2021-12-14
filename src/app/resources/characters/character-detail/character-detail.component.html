@@ -1,11 +1,1 @@
-<section>
-  <article
-    *ngFor="let character of characters"
-    [routerLink]="['characters', character['id']]"
-  >
-    <p>{{ character["name"] }}</p>
-    <img [src]="character['image']" alt="" />
-
-    <p *ngIf="character['house'] != ''">House of {{ character["house"] }}</p>
-  </article>
-</section>
+<p>{{ characterDetail["name"] }}</p>

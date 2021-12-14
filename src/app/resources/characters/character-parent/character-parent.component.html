@@ -1,1 +1,5 @@
-<app-character-detail [characters]="charactersArray"></app-character-detail>
+<app-character-list
+  [characters]="charactersArray"
+  (oneCharacter)="getCharacter($event)"
+></app-character-list>
+<app-character-detail [characterDetail]="detail"></app-character-detail>
