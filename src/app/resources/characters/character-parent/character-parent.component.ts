@@ -12,6 +12,7 @@ export class CharacterParentComponent implements OnDestroy, OnInit {
   charactersArray: Characters[] | any;
   results: any;
   detail: {} | any;
+  character: {} | any;
   constructor(private characterService: CharacterService) {}
 
   ngOnInit() {
@@ -26,7 +27,7 @@ export class CharacterParentComponent implements OnDestroy, OnInit {
   ngOnDestroy() {
     this.characterService.listCharacters();
   }
-  getCharacter($event: any) {
-    return (this.detail = $event.value);
+  getCharacter(character: []) {
+    this.detail = character;
   }
 }
