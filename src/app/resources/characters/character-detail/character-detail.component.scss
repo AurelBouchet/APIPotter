@@ -19,7 +19,7 @@ article {
   color: $font-color;
   font-weight: bold;
   width: 320px;
-  height: 600px;
+  height: 560px;
   filter: drop-shadow(0 0 0.3em $card-color);
   cursor: pointer;
 }
@@ -27,10 +27,13 @@ article {
 p {
   display: flex;
   justify-content: space-around;
-  margin: 10px 0 10px 0;
+  margin: 4px 0 1px 0;
   overflow-wrap: break-word;
 }
 img {
   width: 320px;
   height: 450px;
+}
+p:first-child {
+  font-size: 20px;
 }

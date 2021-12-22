@@ -6,7 +6,4 @@ import { Component, Input } from '@angular/core';
 })
 export class CharacterDetailComponent {
   @Input() detail: any;
-  constructor() {
-    console.log(this.detail);
-  }
 }

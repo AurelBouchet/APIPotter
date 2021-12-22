@@ -1,5 +1,5 @@
 <section>
-  <article>
+  <article *ngIf="detail != null">
     <p>{{ detail["name"] }}</p>
     <img [src]="detail['image']" alt="" />
     <p *ngIf="detail['house'] != ''">House of {{ detail["house"] }}</p>

@@ -1,12 +1,23 @@
 main {
   display: grid;
   grid-template-columns: 60% 40%;
+  background-color: #2b2d42;
 }
+app-header {
+  font-family: "Barlow";
+  top: 0;
+  z-index: 1;
+  width: 100%;
+  position: fixed;
+  background: #2b2d42;
+  padding: 10px 0;
+}
+
 app-character-list {
   grid-column: 1;
-  background-color: #2b2d42;
 }
 
 app-character-detail {
+  margin-top: 60px;
   grid-column: 2;
 }
