@@ -1,1 +1,11 @@
-<p>{{ detail["dateOfBirth"] }}</p>
+<section>
+  <article>
+    <p>{{ detail["name"] }}</p>
+    <img [src]="detail['image']" alt="" />
+    <p *ngIf="detail['house'] != ''">House of {{ detail["house"] }}</p>
+    <p *ngIf="detail['dateOfBirth'] != ''">
+      -date of birth :{{ detail["dateOfBirth"] }}-
+    </p>
+    <p *ngIf="detail['actor'] != ''">played by {{ detail["actor"] }}</p>
+  </article>
+</section>
