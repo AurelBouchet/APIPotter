@@ -5,8 +5,8 @@ import { Component, Input } from '@angular/core';
   styleUrls: ['./character-detail.component.scss'],
 })
 export class CharacterDetailComponent {
-  @Input() characterDetail: any;
+  @Input() detail: any;
   constructor() {
-    console.log(this.characterDetail);
+    console.log(this.detail);
   }
 }

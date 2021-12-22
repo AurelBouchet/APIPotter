@@ -8,9 +8,8 @@ import { CharacterService } from 'src/app/services/character.service';
   styleUrls: ['./character-parent.component.scss'],
   providers: [CharacterService],
 })
-export class CharacterParentComponent implements OnDestroy, OnInit {
+export class CharacterParentComponent implements OnInit {
   charactersArray: Characters[] | any;
-  results: any;
   detail: {} | any;
   character: {} | any;
   constructor(private characterService: CharacterService) {}
@@ -24,9 +23,7 @@ export class CharacterParentComponent implements OnDestroy, OnInit {
         );
       });
   }
-  ngOnDestroy() {
-    this.characterService.listCharacters();
-  }
+
   getCharacter(character: []) {
     this.detail = character;
   }

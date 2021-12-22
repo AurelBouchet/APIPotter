@@ -4,5 +4,5 @@ import { CharacterParentComponent } from './resources/characters/character-paren
 
 export const appRoutes: Routes = [
   { path: '', component: CharacterParentComponent },
-  { path: 'characters/:id', component: CharacterListComponent },
+  { path: 'characters', component: CharacterListComponent },
 ];

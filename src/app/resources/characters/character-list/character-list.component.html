@@ -2,7 +2,6 @@
   <article
     *ngFor="let character of characters"
     (click)="getOneCharacter(character)"
-    [routerLink]="['characters', character['id']]"
   >
     <p>{{ character["name"] }}</p>
     <img [src]="character['image']" alt="" />

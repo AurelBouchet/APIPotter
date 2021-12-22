@@ -1,0 +1,12 @@
+main {
+  display: grid;
+  grid-template-columns: 75% 25%;
+}
+app-character-list {
+  grid-column: 1;
+  background-color: red;
+}
+
+app-character-detail {
+  grid-column: 2;
+}
