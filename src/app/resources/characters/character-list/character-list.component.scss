@@ -5,6 +5,14 @@ $card-color: #5e807f;
 $font-color: #2b2d42;
 //variables//
 
+button {
+  height: 25px;
+  margin-top: 10px;
+  background-color: $card-color;
+  position: fixed;
+  z-index: 1;
+}
+
 section {
   padding-top: 50px;
   font-family: "Barlow";

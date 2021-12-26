@@ -1,11 +1,11 @@
 <section>
-  <article *ngIf="detail != null">
-    <p>{{ detail["name"] }}</p>
-    <img [src]="detail['image']" alt="" />
-    <p *ngIf="detail['house'] != ''">House of {{ detail["house"] }}</p>
-    <p *ngIf="detail['dateOfBirth'] != ''">
-      -date of birth :{{ detail["dateOfBirth"] }}-
+  <article *ngIf="details != null">
+    <p>{{ details["name"] }}</p>
+    <img [src]="details['image']" alt="" />
+    <p *ngIf="details['house'] != ''">House of {{ details["house"] }}</p>
+    <p *ngIf="details['dateOfBirth'] != ''">
+      -date of birth :{{ details["dateOfBirth"] }}-
     </p>
-    <p *ngIf="detail['actor'] != ''">played by {{ detail["actor"] }}</p>
+    <p *ngIf="details['actor'] != ''">played by {{ details["actor"] }}</p>
   </article>
 </section>

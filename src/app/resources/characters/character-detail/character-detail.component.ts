@@ -5,5 +5,5 @@ import { Component, Input } from '@angular/core';
   styleUrls: ['./character-detail.component.scss'],
 })
 export class CharacterDetailComponent {
-  @Input() detail: any;
+  @Input() details: any;
 }

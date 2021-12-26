@@ -3,6 +3,7 @@
   <app-character-list
     [characters]="charactersArray"
     (oneCharacter)="getCharacter($event)"
+    (onlyGryffindors)="getOnlyGryffindors($event)"
   ></app-character-list>
-  <app-character-detail [detail]="detail"></app-character-detail>
+  <app-character-detail [details]="detailsOfCharacter"></app-character-detail>
 </main>
