@@ -11,7 +11,7 @@ import { CharacterService } from 'src/app/services/character.service';
 export class CharacterParentComponent implements OnInit {
   charactersArray: Characters[] | any;
   gryffindorsArray: Characters[] | any;
-  charactersArrayToFilter: Characters[] | any;
+  initialCharactersArray: Characters[] | any;
   character: {} | any;
   detailsOfCharacter: {} | any;
   constructor(private characterService: CharacterService) {}
@@ -23,7 +23,7 @@ export class CharacterParentComponent implements OnInit {
         this.charactersArray = results.filter(
           (element: { image: string }) => element.image != ''
         );
-        this.charactersArrayToFilter = results.filter(
+        this.initialCharactersArray = results.filter(
           (element: { image: string }) => element.image != ''
         );
       });
@@ -35,12 +35,12 @@ export class CharacterParentComponent implements OnInit {
 
   getOnlyGryffindors(gryffindorsArray: []) {
     if (this.charactersArray.length === 25) {
-      this.gryffindorsArray = this.charactersArrayToFilter.filter(
+      this.gryffindorsArray = this.charactersArray.filter(
         (element: { house: string }) => element.house === 'Gryffindor'
       );
       this.charactersArray = this.gryffindorsArray;
     } else {
-      return (this.charactersArray = this.charactersArrayToFilter);
+      return (this.charactersArray = this.initialCharactersArray);
     }
   }
 }

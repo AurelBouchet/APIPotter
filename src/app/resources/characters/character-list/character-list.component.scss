@@ -6,11 +6,18 @@ $font-color: #2b2d42;
 //variables//
 
 button {
+  font-family: "Barlow";
+  color: #fcff6c;
   height: 25px;
+  width: 170px;
   margin-top: 10px;
-  background-color: $card-color;
+  margin-left: 10px;
+  background-color: #5e807f;
+  border-radius: 10px;
   position: fixed;
   z-index: 1;
+  font-size: 16px;
+  cursor: pointer;
 }
 
 section {
