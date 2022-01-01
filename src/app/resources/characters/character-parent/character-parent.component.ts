@@ -34,9 +34,13 @@ export class CharacterParentComponent implements OnInit {
   }
 
   getOnlyGryffindors(gryffindorsArray: []) {
-    this.gryffindorsArray = this.charactersArrayToFilter.filter(
-      (element: { house: string }) => element.house === 'Gryffindor'
-    );
-    this.charactersArray = this.gryffindorsArray;
+    if (this.charactersArray.length === 25) {
+      this.gryffindorsArray = this.charactersArrayToFilter.filter(
+        (element: { house: string }) => element.house === 'Gryffindor'
+      );
+      this.charactersArray = this.gryffindorsArray;
+    } else {
+      return (this.charactersArray = this.charactersArrayToFilter);
+    }
   }
 }
