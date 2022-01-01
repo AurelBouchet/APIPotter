@@ -20,7 +20,7 @@ export class CharacterListComponent {
     this.onlyGryffindors.emit();
     this.gryffindorsArray = !this.gryffindorsArray;
     this.gryffindorsArray
-      ? (this.buttonName = 'Get back to all !')
+      ? (this.buttonName = 'Get back all !')
       : (this.buttonName = 'Only the Gryffindors');
   }
 }
