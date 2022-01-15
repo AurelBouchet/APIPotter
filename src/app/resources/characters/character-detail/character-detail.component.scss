@@ -2,76 +2,40 @@
 $card-color: #5e807f;
 $font-color: #2b2d42;
 //variables//
-@media screen and (max-width: 640px) {
-  section {
-    font-family: "Barlow";
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: center;
-  }
 
-  article {
-    position: fixed;
-    border: solid 2px $card-color;
-    border-radius: 10px;
-    background-color: $card-color;
-    color: $font-color;
-    font-weight: bold;
-    width: 320px;
-    height: 560px;
-    filter: drop-shadow(0 0 0.3em $card-color);
-    cursor: pointer;
-  }
-
-  p {
-    display: flex;
-    justify-content: space-around;
-    margin: 4px 0 1px 0;
-    overflow-wrap: break-word;
-  }
-  img {
-    width: 320px;
-    height: 450px;
-  }
-  p:first-child {
-    font-size: 20px;
-  }
+section {
+  font-family: "Barlow";
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 
-@media screen and (min-width: 640px) {
-  section {
-    font-family: "Barlow";
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: center;
-  }
+article {
+  position: fixed;
+  border: solid 2px $card-color;
+  border-radius: 10px;
+  background-color: $card-color;
+  color: $font-color;
+  font-weight: bold;
+  width: 320px;
+  height: 560px;
+  filter: drop-shadow(0 0 0.3em $card-color);
+  cursor: pointer;
+}
 
-  article {
-    position: fixed;
-    border: solid 2px $card-color;
-    border-radius: 10px;
-    background-color: $card-color;
-    color: $font-color;
-    font-weight: bold;
-    width: 320px;
-    height: 560px;
-    filter: drop-shadow(0 0 0.3em $card-color);
-    cursor: pointer;
-  }
+p {
+  display: flex;
+  justify-content: space-around;
+  margin: 4px 0 1px 0;
+  overflow-wrap: break-word;
+}
 
-  p {
-    display: flex;
-    justify-content: space-around;
-    margin: 4px 0 1px 0;
-    overflow-wrap: break-word;
-  }
-  img {
-    width: 320px;
-    height: 450px;
-  }
-  p:first-child {
-    font-size: 20px;
-  }
+img {
+  width: 320px;
+  height: 450px;
+}
+
+p:first-child {
+  font-size: 20px;
 }
