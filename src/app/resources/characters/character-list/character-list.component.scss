@@ -28,6 +28,7 @@ section {
   flex-wrap: wrap;
   justify-content: center;
 }
+
 article {
   width: 150px;
   margin: 15px;
@@ -43,6 +44,7 @@ article {
 p {
   display: flex;
   justify-content: space-around;
+  margin: 0;
 }
 
 img {
@@ -74,6 +76,7 @@ img {
   p {
     display: flex;
     justify-content: space-around;
+    margin: 5px;
   }
 
   img {

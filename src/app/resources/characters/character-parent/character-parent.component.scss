@@ -14,6 +14,8 @@ main {
 }
 
 app-character-detail {
+  z-index: 1;
+  position: fixed;
   background-color: #2b2d42;
 }
 
@@ -34,5 +36,6 @@ app-character-detail {
   app-character-detail {
     margin-top: 60px;
     grid-column: 2;
+    position: inherit;
   }
 }
