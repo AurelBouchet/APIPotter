@@ -57,9 +57,9 @@ img {
 
 @media screen and (min-width: 740px) {
   button {
-    margin-top: 10px;
+    margin-top: -95px;
+    z-index: 1;
   }
-
   section {
     display: flex;
     flex-direction: row;

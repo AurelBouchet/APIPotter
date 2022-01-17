@@ -7,8 +7,6 @@ section {
   font-family: "Barlow";
   display: flex;
   flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: center;
 }
 
 article {
@@ -17,8 +15,7 @@ article {
   background-color: $card-color;
   color: $font-color;
   font-weight: bold;
-  width: 320px;
-  height: 560px;
+  width: 230px;
   filter: drop-shadow(0 0 0.3em $card-color);
   cursor: pointer;
 }
@@ -31,8 +28,11 @@ p {
 }
 
 img {
-  width: 320px;
-  height: 450px;
+  width: 200;
+  height: 310px;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
 }
 
 p:first-child {
@@ -40,7 +40,21 @@ p:first-child {
 }
 
 @media screen and (min-width: 740px) {
+  section {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
   article {
     position: fixed;
+    width: 320px;
+    height: 560px;
+  }
+
+  img {
+    width: 320px;
+    height: 450px;
   }
 }

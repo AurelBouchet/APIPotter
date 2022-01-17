@@ -2,21 +2,27 @@ app-header {
   position: fixed;
   font-family: "Barlow";
   background: #2b2d42;
-  padding: 10px 0;
-  height: 70px;
   top: 0;
-  z-index: 1;
+  z-index: 2;
   width: 100%;
 }
 
 main {
   background-color: #2b2d42;
+  display: grid;
+  grid-template-rows: 500px fr;
+}
+
+app-character-list {
+  grid-row: 2;
 }
 
 app-character-detail {
-  z-index: 1;
   position: fixed;
+  padding-top: 40px;
   background-color: #2b2d42;
+  z-index: 1;
+  grid-row: 1;
 }
 
 @media screen and (min-width: 740px) {
