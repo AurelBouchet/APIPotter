@@ -6,12 +6,11 @@ $font-color: #2b2d42;
 //variables//
 
 button {
-  margin-top: 50px;
   font-family: "Barlow";
   color: #fcff6c;
   height: 25px;
   width: 170px;
-  margin-top: 10px;
+  margin-top: 45px;
   margin-left: 10px;
   background-color: #5e807f;
   border-radius: 10px;
@@ -20,14 +19,17 @@ button {
   font-size: 16px;
   cursor: pointer;
 }
+
 section {
-  padding-top: 50px;
+  padding-top: 70px;
   font-family: "Barlow";
   display: flex;
   flex-direction: row;
+  flex-wrap: wrap;
   justify-content: center;
 }
 article {
+  width: 150px;
   margin: 15px;
   border: solid 2px $card-color;
   border-radius: 10px;
@@ -46,17 +48,27 @@ p {
 img {
   width: 116px;
   height: 153px;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
 }
 
 @media screen and (min-width: 740px) {
+  button {
+    margin-top: 10px;
+  }
+
   section {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
+    padding-top: 50px;
   }
 
   article {
+    height: 282px;
     margin: 15px;
+    width: auto;
   }
 
   p {

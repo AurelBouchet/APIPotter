@@ -12,7 +12,6 @@ section {
 }
 
 article {
-  position: fixed;
   border: solid 2px $card-color;
   border-radius: 10px;
   background-color: $card-color;
@@ -38,4 +37,10 @@ img {
 
 p:first-child {
   font-size: 20px;
+}
+
+@media screen and (min-width: 740px) {
+  article {
+    position: fixed;
+  }
 }
