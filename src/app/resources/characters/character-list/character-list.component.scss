@@ -21,7 +21,7 @@ button {
 }
 
 section {
-  padding-top: 70px;
+  padding-top: 500px;
   font-family: "Barlow";
   display: flex;
   flex-direction: row;
@@ -57,8 +57,7 @@ img {
 
 @media screen and (min-width: 740px) {
   button {
-    margin-top: -95px;
-    z-index: 1;
+    margin-top: -45px;
   }
   section {
     display: flex;
@@ -68,7 +67,7 @@ img {
   }
 
   article {
-    height: 282px;
+    height: 262px;
     margin: 15px;
     width: auto;
   }

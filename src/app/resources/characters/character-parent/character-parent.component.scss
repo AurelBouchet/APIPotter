@@ -3,7 +3,8 @@ app-header {
   font-family: "Barlow";
   background: #2b2d42;
   top: 0;
-  z-index: 2;
+  z-index: 1;
+  height: 80px;
   width: 100%;
 }
 
@@ -19,15 +20,15 @@ app-character-list {
 
 app-character-detail {
   position: fixed;
-  padding-top: 40px;
+  padding-top: 80px;
   background-color: #2b2d42;
-  z-index: 1;
   grid-row: 1;
+  width: 100%;
 }
 
 @media screen and (min-width: 740px) {
   app-header {
-    height: 40px;
+    height: 50px;
   }
 
   main {
@@ -40,7 +41,7 @@ app-character-detail {
   }
 
   app-character-detail {
-    margin-top: 60px;
+    padding-top: 50px;
     grid-column: 2;
     position: inherit;
   }
