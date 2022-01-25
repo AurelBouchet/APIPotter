@@ -9,7 +9,7 @@ import { Characters } from './interface';
 export class CharacterService {
   constructor(private http: HttpClient) {}
 
-  url = 'http://hp-api.herokuapp.com/api/characters';
+  url = 'https://hp-api.herokuapp.com/api/characters';
 
   listCharacters(): Observable<Characters[]> {
     return this.http.get<[]>(this.url).pipe(
