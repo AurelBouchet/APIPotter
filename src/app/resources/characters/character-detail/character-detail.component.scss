@@ -1,42 +1,42 @@
 //variables//
 $card-color: #5e807f;
-$font-color: #2b2d42;
+$card-font-color: #2b2d42;
 //variables//
 
 section {
   font-family: "Barlow";
   display: flex;
   flex-direction: row;
-}
 
-article {
-  border: solid 2px $card-color;
-  border-radius: 10px;
-  background-color: $card-color;
-  color: $font-color;
-  font-weight: bold;
-  width: 100%;
-  filter: drop-shadow(0 0 0.3em $card-color);
-  cursor: pointer;
-}
+  article {
+    border: solid 2px $card-color;
+    border-radius: 10px;
+    background-color: $card-color;
+    color: $card-font-color;
+    font-weight: bold;
+    width: 100%;
+    filter: drop-shadow(0 0 0.3em $card-color);
+    cursor: pointer;
 
-p {
-  display: flex;
-  justify-content: space-around;
-  margin: 4px 0 1px 0;
-  overflow-wrap: break-word;
-}
+    p {
+      display: flex;
+      justify-content: space-around;
+      margin: 4px 0 1px 0;
+      overflow-wrap: break-word;
+    }
 
-img {
-  width: 200px;
-  height: 310px;
-  margin-left: auto;
-  margin-right: auto;
-  display: block;
-}
+    p:first-child {
+      font-size: 20px;
+    }
 
-p:first-child {
-  font-size: 20px;
+    img {
+      width: 200px;
+      height: 310px;
+      margin-left: auto;
+      margin-right: auto;
+      display: block;
+    }
+  }
 }
 
 @media screen and (min-width: 740px) {
@@ -45,16 +45,16 @@ p:first-child {
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: center;
-  }
 
-  article {
-    position: fixed;
-    width: 320px;
-    height: 560px;
-  }
+    article {
+      position: fixed;
+      width: 320px;
+      height: 560px;
 
-  img {
-    width: 320px;
-    height: 450px;
+      img {
+        width: 320px;
+        height: 450px;
+      }
+    }
   }
 }

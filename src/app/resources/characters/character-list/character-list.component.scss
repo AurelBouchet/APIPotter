@@ -1,18 +1,11 @@
-@import url("https://fonts.googleapis.com/css2?family=Barlow:wght@500&display=swap");
-
-//variables//
-$card-color: #5e807f;
-$font-color: #2b2d42;
-//variables//
-
 button {
   font-family: "Barlow";
-  color: #fcff6c;
+  color: $title-font-color;
   height: 25px;
   width: 170px;
   margin-top: 45px;
   margin-left: 10px;
-  background-color: #5e807f;
+  background-color: $card-color;
   border-radius: 10px;
   position: fixed;
   z-index: 1;
@@ -27,59 +20,60 @@ section {
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: center;
-}
 
-article {
-  width: 150px;
-  margin: 15px;
-  border: solid 2px $card-color;
-  border-radius: 10px;
-  background-color: $card-color;
-  color: $font-color;
-  font-weight: bold;
-  filter: drop-shadow(0 0 0.3em $card-color);
-  cursor: pointer;
-}
+  article {
+    width: 150px;
+    margin: 15px;
+    border: solid 2px $card-color;
+    border-radius: 10px;
+    background-color: $card-color;
+    color: $card-font-color;
+    font-weight: bold;
+    filter: drop-shadow(0 0 0.3em $card-color);
+    cursor: pointer;
 
-p {
-  display: flex;
-  justify-content: space-around;
-  margin: 0;
-}
+    p {
+      display: flex;
+      justify-content: space-around;
+      margin: 0;
+    }
 
-img {
-  width: 116px;
-  height: 153px;
-  margin-left: auto;
-  margin-right: auto;
-  display: block;
+    img {
+      width: 116px;
+      height: 153px;
+      margin-left: auto;
+      margin-right: auto;
+      display: block;
+    }
+  }
 }
 
 @media screen and (min-width: 740px) {
   button {
     margin-top: -45px;
   }
+
   section {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     padding-top: 50px;
-  }
 
-  article {
-    height: 262px;
-    margin: 15px;
-    width: auto;
-  }
+    article {
+      height: 262px;
+      margin: 15px;
+      width: auto;
 
-  p {
-    display: flex;
-    justify-content: space-around;
-    margin: 5px;
-  }
+      p {
+        display: flex;
+        justify-content: space-around;
+        margin: 5px;
+      }
 
-  img {
-    width: 146px;
-    height: 192px;
+      img {
+        width: 146px;
+        height: 192px;
+      }
+    }
   }
 }
