@@ -1,3 +1,5 @@
+@import "./../../../../assets/styles/variables";
+
 button {
   font-family: "Barlow";
   color: $title-font-color;
@@ -5,7 +7,7 @@ button {
   width: 170px;
   margin-top: 45px;
   margin-left: 10px;
-  background-color: $card-color;
+  background-color: $card-background-color;
   border-radius: 10px;
   position: fixed;
   z-index: 1;
@@ -24,12 +26,12 @@ section {
   article {
     width: 150px;
     margin: 15px;
-    border: solid 2px $card-color;
+    border: solid 2px $card-background-color;
     border-radius: 10px;
-    background-color: $card-color;
+    background-color: $card-background-color;
     color: $card-font-color;
     font-weight: bold;
-    filter: drop-shadow(0 0 0.3em $card-color);
+    filter: drop-shadow(0 0 0.3em $card-background-color);
     cursor: pointer;
 
     p {

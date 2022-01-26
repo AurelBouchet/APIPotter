@@ -1,7 +1,9 @@
+@import "./../../../../assets/styles/variables";
+
 app-header {
   position: fixed;
   font-family: "Barlow";
-  background: #2b2d42;
+  background-color: $page-background-color;
   top: 0;
   z-index: 1;
   height: 80px;
@@ -9,7 +11,7 @@ app-header {
 }
 
 main {
-  background-color: #2b2d42;
+  background-color: $page-background-color;
   display: grid;
   grid-template-rows: 500px fr;
 }
@@ -21,7 +23,7 @@ app-character-list {
 app-character-detail {
   position: fixed;
   padding-top: 80px;
-  background-color: #2b2d42;
+  background-color: $page-background-color;
   grid-row: 1;
   width: 100%;
 }

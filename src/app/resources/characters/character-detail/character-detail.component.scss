@@ -1,7 +1,4 @@
-//variables//
-$card-color: #5e807f;
-$card-font-color: #2b2d42;
-//variables//
+@import "./../../../../assets/styles/variables";
 
 section {
   font-family: "Barlow";
@@ -9,13 +6,13 @@ section {
   flex-direction: row;
 
   article {
-    border: solid 2px $card-color;
+    border: solid 2px $card-background-color;
     border-radius: 10px;
-    background-color: $card-color;
+    background-color: $card-background-color;
     color: $card-font-color;
     font-weight: bold;
     width: 100%;
-    filter: drop-shadow(0 0 0.3em $card-color);
+    filter: drop-shadow(0 0 0.3em $card-background-color);
     cursor: pointer;
 
     p {
