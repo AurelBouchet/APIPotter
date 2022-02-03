@@ -1,4 +1,4 @@
-import { HttpClientModule } from '@angular/common/http';
+import { HttpClientModule, HTTP_INTERCEPTORS } from '@angular/common/http';
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { RouterModule } from '@angular/router';
@@ -9,6 +9,7 @@ import { HeaderComponent } from './header/header.component';
 import { CharacterListComponent } from './resources/characters/character-list/character-list.component';
 import { CharacterParentComponent } from './resources/characters/character-parent/character-parent.component';
 import { CharacterDetailComponent } from './resources/characters/character-detail/character-detail.component';
+import { LogInterceptor } from './core/log.interceptor';
 
 @NgModule({
   declarations: [
@@ -19,7 +20,13 @@ import { CharacterDetailComponent } from './resources/characters/character-detai
     CharacterDetailComponent,
   ],
   imports: [BrowserModule, RouterModule.forRoot(appRoutes), HttpClientModule],
-  providers: [],
+  providers: [
+    {
+      provide: HTTP_INTERCEPTORS,
+      useClass: LogInterceptor,
+      multi: true,
+    },
+  ],
   bootstrap: [AppComponent],
 })
 export class AppModule {}
