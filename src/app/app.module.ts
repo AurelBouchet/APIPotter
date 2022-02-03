@@ -1,10 +1,7 @@
 import { HttpClientModule, HTTP_INTERCEPTORS } from '@angular/common/http';
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-import { RouterModule } from '@angular/router';
-
 import { AppComponent } from './app.component';
-import { appRoutes } from './app.routes';
 import { HeaderComponent } from './header/header.component';
 import { CharacterListComponent } from './resources/characters/character-list/character-list.component';
 import { CharacterParentComponent } from './resources/characters/character-parent/character-parent.component';
@@ -19,7 +16,7 @@ import { LogInterceptor } from './core/log.interceptor';
     CharacterParentComponent,
     CharacterDetailComponent,
   ],
-  imports: [BrowserModule, RouterModule.forRoot(appRoutes), HttpClientModule],
+  imports: [BrowserModule, HttpClientModule],
   providers: [
     {
       provide: HTTP_INTERCEPTORS,
